@@ -5,9 +5,9 @@
       <template #dropdown>
       <div>
         <el-dropdown-menu>
-          <el-dropdown-item @click="routerLink"><i class="fa fa-pencil" aria-hidden="true"></i> 写文章</el-dropdown-item>
+          <el-dropdown-item @click="routerLink1"><i class="fa fa-pencil" aria-hidden="true"></i> 写文章</el-dropdown-item>
           <el-dropdown-item><i class="fa fa-gg-circle" aria-hidden="true"></i>发沸点</el-dropdown-item>
-          <el-dropdown-item><i class="fa fa-code" aria-hidden="true"></i>写代码</el-dropdown-item>
+          <el-dropdown-item @click="routerLink2"><i class="fa fa-code" aria-hidden="true"></i>写代码</el-dropdown-item>
         </el-dropdown-menu>
         </div>
       </template>
@@ -23,8 +23,11 @@ const handleClick = () => {
   // eslint-disable-next-line no-alert
   alert('别急，急也没用')
 }
-const routerLink=()=>{//路由跳转
+const routerLink1=()=>{//路由跳转
   router.push('/markdown');
+};
+const routerLink2=()=>{
+  router.push('/code');
 };
 </script>
 <style scoped>

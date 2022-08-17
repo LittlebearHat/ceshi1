@@ -20,6 +20,11 @@ const routes = [
     path: '/markdown',
     name: 'markdown',
     component: () => import('@/views/MarkDown/index.vue'),
+  },
+  {
+    path: '/code',
+    name: 'code',
+    component: () => import('@/views/Code/index.vue'),
   }
 ]
 

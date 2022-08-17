@@ -1,6 +1,6 @@
 <template>
 <Title></Title>
-  <v-md-editor v-model="text" height="755px"></v-md-editor>
+  <v-md-editor v-model="text" height="690px"></v-md-editor>
 </template>
 
 <script>
